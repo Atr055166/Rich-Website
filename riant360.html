@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIANT360 Enterprises</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">RIANT360 ENTERPRISES</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="centered-content">
+            <h2>A multi-global advanced Company</h2>
+            <p>We operate under different sectors of business;</p>
+        </section>
+
+
+
+        <section id="services" class="services-section">
+            <h2>Our Services</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>1. Printing & Multimedia Services</h3>
+                    <p>High-quality printing and multimedia solutions tailored to your needs.</p>
+        </div>
+        <div class="service-item">
+            <h3>2. Rentals</h3>
+            <p>Flexible rental services for equipment and facilities.</p>
+        </div>
+        <div class="service-item">
+            <h3>3. Retail Trading</h3>
+            <p>Wide range of products available for retail trading.</p>
+        </div>
+        <div class="service-item">
+            <h3>4. E-commerce</h3>
+            <p>Comprehensive e-commerce solutions to grow your online business.</p>
+        </div>
+    </div>
+        </section>
+        <section id="portfolio" class="projects-section">
+            <h2>Our Projects</h2>
+            <div class="project-gallery">
+                <div class="project-item">
+                    <img src="c:\Users\PC\Desktop\product-jpeg-500x500.webp" alt="Project 1">
+                    <p>Printing & Multimedia Project</p>
+                </div>
+                <div class="project-item">
+                    <img src="c:\Users\PC\Desktop\Rich Creation Logo 11.png" alt="Project 2">
+                    <p>Rentals Project</p>
+                </div>
+                <div class="project-item">
+                    <img src="project3.jpg" alt="Project 3">
+                    <p>Retail Trading Project</p>
+                </div>
+                <div class="project-item">
+                    <img src="c:\Users\PC\Desktop\10178401_vllkytpn4dalq1lts_jpegf7e9f2f7e7061e142d9514435c9b693d.jpeg" alt="Project 4">
+                    <p>E-commerce Project</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+<style>
+ /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3103ae;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+/* Centered Content Styles */
+.centered-content {
+    text-align: center;
+    color: #ff0000;
+    padding: 100px 20px 50px; /* Adjusted for fixed navbar */
+}
+
+.centered-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.centered-content p {
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+/* Services Section */
+.services-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+    color: #3103ae;
+}
+
+.services-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 50px 20px;
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #3103ae;
+}
+
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .services-list, .project-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+</style>
